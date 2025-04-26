@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f0f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2c3e50;
+}
+
+h1, h2 {
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: #34495e;
+}
+
+.about-section {
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Skills Section */
+.skills-section, .project-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.skills-section ul, .project-section ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.skills-section ul li, .project-section ul li {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.project-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-section ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-section ul li a:hover {
+  color: #0077cc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.project-section ul li a:hover {
+  color: #0077cc;
+}
+
+/* Paragraph Style */
+p {
+  max-width: 800px;
+  font-size: 1em; /* Smaller font size for paragraph text */
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Reduce the space between skills and projects */
+.skills-section + .project-section {
+  margin-top: 20px;
+}

@@ -1,63 +1,126 @@
-/* style.css */
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #2c3e50); /* Dark sleek gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e0e0e0; /* Light text */
 }
 
-/* Header Styling */
-header {
-    background-color: #2d2d2d;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+h1, h2 {
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: #66fcf1; /* Soft bright blue */
+}
+.about-section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the div horizontally */
+  text-align: center; /* Ensures the content inside is centered */
+  padding: 20px; /* Adds some spacing around the content */
+  color: #fff; /* Change text color to white for better contrast against dark background */
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 10px;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
+.about-section h2 {
+  margin-top: 0; /* Remove any top margin on the title */
+  margin-bottom: 10px; /* Adds spacing between the title and content */
+  color: #ffffff; /* Ensures the heading is white */
 }
 
-/* Main Section */
-main {
-    padding: 20px;
-    text-align: center;
+.about-section p {
+  font-size: 1.1em;
+  color: #dcdcdc; /* Light grey text color for better readability */
+  line-height: 1.6;
+  max-width: 800px; /* Ensures the paragraph doesn’t stretch too wide */
+  margin: 0 auto; /* Ensures the paragraph is centered */
+  text-align: center; /* Centers the paragraph text */
 }
 
-main h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  gap: 40px;
+  margin-top: 20px;
 }
 
-main p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+/* Skills Section and Project Section */
+.skills-section, .project-section {
+  background: #2c3e50; /* Dark background card */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  flex: 1;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #2d2d2d;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.skills-section ul, .project-section ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
 }
 
-footer p {
-    font-size: 1em;
+.skills-section ul li, .project-section ul li {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #dcdcdc;
+}
+
+.project-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-section ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-section ul li a:hover {
+  color: #66fcf1; /* Match header color on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Paragraph Style */
+p {
+  max-width: 800px;
+  font-size: 1em;
+  color: #cccccc;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Reduce the space between skills and projects */
+.skills-section + .project-section {
+  margin-top: 20px;
+}
+
+.next-link {
+  display: inline-block;
+  margin-top: 40px;
+  color: #66fcf1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.next-link:hover {
+  color: #ffffff;
 }
