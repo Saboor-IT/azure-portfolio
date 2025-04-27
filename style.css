@@ -125,13 +125,26 @@ h1, h2 {
   }
 
   /* Ensure content fits screen */
-  .main-content, .project-content  {
+  .main-content, {
     width: 100%;
     margin-left: 0; /* Remove left margin */
     padding: 20px;
     flex-direction: column; /* Stack content vertically */
     align-items: center;
   }
+
+ .project-content {
+    margin-left: 0;
+    width: 90%; /* Adjust width to ensure it's centered */
+    padding: 10px;
+    margin-right: auto; /* Ensure content is aligned to the center */
+    margin-left: auto; /* Center the content horizontally */
+  }
+  .sidebar {
+    width: 100%; /* Make sidebar full width on smaller screens */
+    height: auto;
+  }
+}
 
   /* About section adjustments for mobile */
   .about-section {
