@@ -133,18 +133,21 @@ h1, h2 {
     align-items: center;
   }
 
- .project-content {
+  .project-content {
+    width: 100%; /* Take full width on smaller screens */
     margin-left: 0;
-    width: 90%; /* Adjust width to ensure it's centered */
+    margin-right: 0;
     padding: 10px;
-    margin-right: auto; /* Ensure content is aligned to the center */
-    margin-left: auto; /* Center the content horizontally */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically if needed */
+    text-align: center; /* Ensure text is centered */
   }
+
   .sidebar {
-    width: 100%; /* Make sidebar full width on smaller screens */
+    width: 100%; /* Full width sidebar */
     height: auto;
   }
-}
 
   /* About section adjustments for mobile */
   .about-section {
