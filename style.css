@@ -232,18 +232,6 @@ h1, h2 {
   color: #87CEEB;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .sidebar {
-    width: 100%; /* Make sidebar full width on smaller screens */
-    height: auto;
-  }
-}
-
 /* Project Content Styles */
 .project-content {
   padding: 20px;
@@ -298,15 +286,3 @@ h1, h2 {
   color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .project-content {
-    margin-left: 0;
-    width: 100%;
-    padding: 10px;
-  }
-  .sidebar {
-    width: 100%; /* Make sidebar full width on smaller screens */
-    height: auto;
-  }
-}
