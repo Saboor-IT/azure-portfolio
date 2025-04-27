@@ -90,19 +90,85 @@ h1, h2 {
 }
 
 /* Responsive */
+/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    width: 100%;
-    padding: 10px; /* Slightly smaller padding for mobile */
-  }
+  /* Sidebar styles for mobile */
   .sidebar {
     width: 100%;
-    height: auto;
+    position: relative;
+    height: auto; /* Allow the sidebar to grow with content */
+    padding-left: 20px; /* Maintain some left padding */
+  }
+
+  .sidebar h2 {
+    font-size: 22px; /* Make the sidebar header smaller for mobile */
+  }
+
+  /* Make sidebar links stack vertically */
+  .sidebar ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 15px;
+  }
+
+  .sidebar ul li a {
+    font-size: 16px; /* Smaller font size for links */
+    color: #A9A9A9;
+  }
+
+  /* Project Section Styling for Mobile */
+  .project-section ul li a {
+    font-size: 16px; /* Adjust project links size */
+  }
+
+  /* Ensure content fits screen */
+  .main-content, .project-content {
+    width: 100%;
+    margin-left: 0; /* Remove left margin */
+    padding: 20px;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  /* About section adjustments for mobile */
+  .about-section {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-section p {
+    font-size: 1.2em; /* Slightly larger text for mobile */
+  }
+
+  /* Adjust Skills section */
+  .skills-section, .project-section {
+    width: 100%; /* Take up full width */
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Dropdown for Projects (responsive) */
+  .dropdown-btn {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%; /* Make the dropdown full width */
+  }
+
+  .dropdown-container {
+    background-color: #333;
+    width: 100%; /* Ensure it spans the full width */
+  }
+
+  .dropdown-container a {
+    font-size: 16px;
+    color: #fff;
   }
 }
+
 .about-section {
   width: 90%;
   max-width: 1000px;
