@@ -125,64 +125,12 @@ h1, h2 {
   }
 
   /* Ensure content fits screen */
-  .main-content, {
+  .main-content {
     width: 100%;
     margin-left: 0; /* Remove left margin */
     padding: 20px;
     flex-direction: column; /* Stack content vertically */
     align-items: center;
-  }
-
-     .project-content {
-        display: flex;
-        flex-direction: column;  /* Stack content vertically */
-        align-items: center;     /* Center elements horizontally */
-        justify-content: center; /* Center the content vertically */
-        padding: 15px;           /* Add padding to prevent content from touching the edges */
-        text-align: center;      /* Center text content */
-    }
-
-    .project-content h1 {
-        font-size: 24px;         /* Reduce the font size for the main title */
-        margin-bottom: 10px;     /* Add space below the main heading */
-    }
-
-    .project-content h2 {
-        font-size: 20px;         /* Adjust heading size */
-        margin-bottom: 8px;      /* Add spacing below each heading */
-    }
-
-    .project-content p {
-        font-size: 16px;         /* Adjust text size for readability */
-        margin: 10px 0;          /* Space above and below paragraphs */
-    }
-
-    .project-content ul {
-        list-style-type: disc;   /* Use bullet points for the list */
-        padding-left: 20px;      /* Indent list items */
-    }
-
-    .project-content a {
-        text-decoration: none;   /* Remove underlines from links */
-        color: #007bff;          /* Set link color */
-        font-weight: bold;       /* Make the link bold */
-        display: inline-block;   /* Allow some spacing around the link */
-        margin-top: 15px;        /* Space above the link */
-    }
-
-    .project-content .next-link {
-        font-size: 18px;         /* Adjust the font size for the 'Next Project' link */
-        margin-top: 20px;        /* Add space above the 'Next Project' link */
-    }
-
-  .sidebar {
-    width: 100%; /* Make sidebar full width on smaller screens */
-    height: auto;
-  }
-
-  .sidebar {
-    width: 100%; /* Full width sidebar */
-    height: auto;
   }
 
   /* About section adjustments for mobile */
@@ -284,6 +232,18 @@ h1, h2 {
   color: #87CEEB;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar {
+    width: 100%; /* Make sidebar full width on smaller screens */
+    height: auto;
+  }
+}
+
 /* Project Content Styles */
 .project-content {
   padding: 20px;
@@ -338,3 +298,15 @@ h1, h2 {
   color: #fff;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .project-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  .sidebar {
+    width: 100%; /* Make sidebar full width on smaller screens */
+    height: auto;
+  }
+}
