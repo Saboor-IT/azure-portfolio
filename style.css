@@ -125,18 +125,10 @@ h1, h2 {
   }
 
   /* Ensure content fits screen */
-  .main-content, {
+  .main-content, .project-content  {
     width: 100%;
     margin-left: 0; /* Remove left margin */
     padding: 20px;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;
-  }
-
-  .project-content {
-    width: 100%;
-    margin-left: 0; /* Remove left margin */
-    padding: 0;
     flex-direction: column; /* Stack content vertically */
     align-items: center;
   }
