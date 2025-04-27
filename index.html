@@ -5,11 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saboor | Cloud & IT Professional</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Dropdown specific styles */
+    .dropdown-btn {
+      font-size: 18px;
+      border: none;
+      background: none;
+      color: #fff;
+      padding: 8px 0;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .dropdown-container {
+      display: none;
+      background-color: #444;
+      padding-left: 15px;
+    }
+
+    .dropdown-container a {
+      font-size: 16px;
+    }
+
+    .dropdown-btn:hover {
+      color: #0077cc;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Saboor Ali</h1>
-  <h2>Cloud & Security Professional | IT Operations | Technical Solutions Specialist</h2>
+<div class="sidebar fixed">
+  <h2>Site Menu</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="professional-experience.html">Professional Experience</a></li>
+    <li><a href="technologies-expertise.html">Technologies & Expertise</a></li>
+    <li><a href="education-certifications.html">Education & Certifications</a></li>
+    <li><a href="recommendations.html">Recommendations</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+    
+    <!-- Dropdown for Projects -->
+ <li>
+  <details>
+    <summary class="project-title">Projects</summary>
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li style="margin-bottom: 10px;"><a href="project1.html">Azure Network Security Implementation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project2.html">RightFax DiD SIP Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project3.html">RightFax Azure Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project4.html">RPA Client Record Automation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project5.html">DocuShare Server Patching</a></li>
+      <li style="margin-bottom: 10px;"><a href="project6.html">Linux Server Environment Setup</a></li>
+      <li><a href="project7.html">Azure VMs Disaster Recovery</a></li>
+    </ul>
+  </details>
+</li>
+
+    <li><a href="https://www.linkedin.com/in/saboor-ali/" target="_blank">Let's Connect</a></li>
+
+  </ul>
+</div>
+
+
+<h1 class="title1">Saboor Ali</h1>
+<h2 class="title2">Cloud & Security Professional | IT Operations | Technical Solutions Specialist</h2>
 
 <div class="about-section">
   <h2>About Me</h2>
@@ -20,15 +80,14 @@
     <br><br>
     Passionate about delivering seamless project implementations and continuously expanding my expertise in cloud infrastructure, security operations, and the future of IT.
   </p>
-   <p>
-   <br>
+  <p>
+  <br>
     Connect with me on <a href="https://www.linkedin.com/in/saboor-ali/" target="_blank" style="color: #0077cc;">LinkedIn</a>
   </p>
 </div>
 
+<section class="main-content">
 
-  <section class="main-content">
-   
   <!-- Skills Section -->
   <div class="skills-section">
     <h2>Skills</h2>
@@ -46,18 +105,31 @@
     </ul>
   </div>
 
-    <div class="project-section">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="project1.html">Azure Network Security Implementation</a></li>
-        <li><a href="project2.html">RightFax DiD SIP Migration</a></li>
-        <li><a href="project3.html">RightFax Azure Migration</a></li>
-        <li><a href="project4.html">RPA Client Record Automation</a></li>
-        <li><a href="project5.html">DocuShare Server Patching</a></li>
-        <li><a href="project6.html">Linux Server Environment Setup</a></li>
-        <li><a href="project7.html">Azure VMs Disaster Recovery</a></li>
-      </ul>
-    </div>
-  </section>
+  <!-- Projects Section -->
+  <div class="project-section">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="project1.html">Azure Network Security Implementation</a></li>
+      <li><a href="project2.html">RightFax DiD SIP Migration</a></li>
+      <li><a href="project3.html">RightFax Azure Migration</a></li>
+      <li><a href="project4.html">RPA Client Record Automation</a></li>
+      <li><a href="project5.html">DocuShare Server Patching</a></li>
+      <li><a href="project6.html">Linux Server Environment Setup</a></li>
+      <li><a href="project7.html">Azure VMs Disaster Recovery</a></li>
+    </ul>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var dropdown = document.querySelector(".dropdown-btn");
+    var dropdownContent = document.querySelector(".dropdown-container");
+
+    dropdown.addEventListener("click", function() {
+      dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+    });
+  });
+</script>
+
 </body>
 </html>
