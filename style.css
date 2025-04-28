@@ -11,6 +11,24 @@ body {
   color: #e0e0e0; /* Light text */
 }
 
+/* For mobile view */
+@media (max-width: 768px) {
+    .experience {
+        width: 95%; /* Allow for more flexibility on smaller screens */
+        padding: 10px; /* Reduce padding to fit content */
+    }
+
+    .back-link {
+        text-align: right; /* Align the back link to the right */
+    }
+
+    #experience {
+        margin-left: 0; /* Remove any left margin */
+        margin-right: 0; /* Remove any right margin */
+    }
+}
+
+
 /* Sidebar styles */
 .sidebar {
   position: fixed; /* Fixed on the left side */
