@@ -58,6 +58,32 @@ body {
 
 }
 
+.two-column-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+section {
+  flex: 1;
+  padding: 20px;
+}
+
+.skill-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skill-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+ 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .cert-list {
   list-style-type: none;
   padding-left: 0;
@@ -105,6 +131,8 @@ width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
  margin-left: 14.5%; /* Matches sidebar width */
   margin-bottom: 10px;
       color: #D3D3D3; 
+flex: 1;
+margin-left: 190px;
 }
 
 .title2 {
@@ -114,6 +142,8 @@ width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
   margin-top: 0; /* no extra space at the top */
   margin-bottom: 15px; /* bigger space after second title */
       color: #A9A9A9; 
+flex: 1;
+margin-left: 190px;
 }
 
 /* Main content styles */
@@ -131,113 +161,17 @@ width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
 }
 
 
-/* Responsive */
-/* Responsive Styles for Mobile */
-@media (max-width: 768px) {
-  /* Sidebar styles for mobile */
-  .sidebar {
-    width: 100%;
-    position: relative;
-    height: auto; /* Allow the sidebar to grow with content */
-    padding-left: 20px; /* Maintain some left padding */
-  }
-
-  .sidebar h2 {
-    font-size: 22px; /* Make the sidebar header smaller for mobile */
-  }
-
-  /* Make sidebar links stack vertically */
-  .sidebar ul {
-    padding-left: 0;
-    list-style-type: none;
-  }
-
-  .sidebar ul li {
-    margin-bottom: 15px;
-  }
-
-  .sidebar ul li a {
-    font-size: 16px; /* Smaller font size for links */
-    color: #A9A9A9;
-  }
-
-  /* Project Section Styling for Mobile */
-  .project-section ul li a {
-    font-size: 16px; /* Adjust project links size */
-  }
-
-  /* Ensure content fits screen */
-  .main-content {
-    width: 100%;
-    margin-left: 0; /* Remove left margin */
-    padding: 20px;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;
-  }
-
-  /* About section adjustments for mobile */
-  .about-section {
-     
-    flex: 1; /* allow it to grow and fill vertical space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertically center content */
-    height: 100%; /* fill remaining screen space */
-    box-sizing: border-box;
-
-
-/margin-left: 0;
-  margin-right: 17%;
-    /width: 100%;
-    /padding: 20px;
-    /text-align: center;
-  }
-
-.title1, .title2 {
-  text-align: center;
-  width: 100%;
-  margin-left: 0;
-}
-
-
-  .about-section p {
-    font-size: 1.2em; /* Slightly larger text for mobile */
-  }
-
-  /* Adjust Skills section */
-  .skills-section, .project-section {
-    width: 100%; /* Take up full width */
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  /* Dropdown for Projects (responsive) */
-  .dropdown-btn {
-    font-size: 16px;
-    padding: 10px;
-    width: 100%; /* Make the dropdown full width */
-  }
-
-  .dropdown-container {
-    background-color: #333;
-    width: 100%; /* Ensure it spans the full width */
-  }
-
-  .dropdown-container a {
-    font-size: 16px;
-    color: #fff;
-  }
-}
-
 .about-section {
   margin-left: 15%; /* Push it more to the right (beyond the sidebar) */
-  max-width: 1000px;
+  max-width: 800px;
   width: 90%; /* Make it wider */
+margin-left: 200px;
   text-align: center; /* Optional: left-align for readability */
-  padding: 10px;
+  padding: 30px;
   color: #fff;
   margin-top: 00px;
   margin-bottom: 00px;
+flex: 1;
 }
 
 
@@ -251,6 +185,8 @@ width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
 }
 
 .about-section p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   font-size: 1.2em;
   color: #FFFFFF;
   line-height: 1.6;
@@ -298,7 +234,7 @@ width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .main-content {
     flex-direction: column;
     align-items: center;
@@ -364,7 +300,7 @@ width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .project-content {
     margin-left: 0;
     width: 100%;
@@ -423,7 +359,7 @@ width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
 }
 
 /* For mobile view */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Sidebar Styles */
   .sidebar {
     width: 100%; /* Sidebar becomes full width on smaller screens */
@@ -467,6 +403,105 @@ width: 100%;
     border-radius: 8px;
 
 
+  }
+
+}
+/* Responsive */
+/* Responsive Styles for Mobile */
+@media (max-width: 800px) {
+  /* Sidebar styles for mobile */
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto; /* Allow the sidebar to grow with content */
+    padding-left: 20px; /* Maintain some left padding */
+  }
+
+  .sidebar h2 {
+    font-size: 22px; /* Make the sidebar header smaller for mobile */
+  }
+
+  /* Make sidebar links stack vertically */
+  .sidebar ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 15px;
+  }
+
+  .sidebar ul li a {
+    font-size: 16px; /* Smaller font size for links */
+    color: #A9A9A9;
+  }
+
+  /* Project Section Styling for Mobile */
+  .project-section ul li a {
+    font-size: 16px; /* Adjust project links size */
+  }
+
+  /* Ensure content fits screen */
+  .main-content {
+    width: 100%;
+    margin-left: 0; /* Remove left margin */
+    padding: 20px;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  /* About section adjustments for mobile */
+  .about-section {
+    margin-left: 100px; 
+    flex: 1; /* allow it to grow and fill vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
+    height: 100%; /* fill remaining screen space */
+    box-sizing: border-box;
+
+
+/margin-left: 0;
+  margin-right: 17%;
+    /width: 100%;
+    /padding: 20px;
+    /text-align: center;
+  }
+
+.title1, .title2 {
+  text-align: center;
+  width: 100%;
+  margin-left: 0;
+
+}
+
+
+  .about-section p {
+    font-size: 1.2em; /* Slightly larger text for mobile */
+  }
+
+  /* Adjust Skills section */
+  .skills-section, .project-section {
+    width: 100%; /* Take up full width */
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Dropdown for Projects (responsive) */
+  .dropdown-btn {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%; /* Make the dropdown full width */
+  }
+
+  .dropdown-container {
+    background-color: #333;
+    width: 100%; /* Ensure it spans the full width */
+  }
+
+  .dropdown-container a {
+    font-size: 16px;
+    color: #fff;
   }
 
 }
