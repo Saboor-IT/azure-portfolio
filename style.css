@@ -84,6 +84,42 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+    .blog-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+/* Add some styling for blog post sections */
+
+.blog-post {
+  border: 1px solid #ccc; /* Light border around each blog */
+  border-radius: 10px; /* Rounded corners for the border */
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+  margin-bottom: 60px;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  color: #D3D3D3; 
+}
+
+.blog-post p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.blog-post .hashtags {
+  color: #777;
+  font-size: 14px;
+}
+
+
 .cert-list {
   list-style-type: none;
   padding-left: 0;
