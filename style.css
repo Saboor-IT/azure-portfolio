@@ -69,7 +69,7 @@ h1, h2 {
   margin-top: 10px;
 
 width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
- margin-left: 15%; /* Matches sidebar width */
+ margin-left: 14.5%; /* Matches sidebar width */
   margin-bottom: 10px;
       color: #D3D3D3; 
 }
@@ -77,7 +77,7 @@ width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
 .title2 {
 
 width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
- margin-left: 15%; /* Matches sidebar width */
+ margin-left: 14.5%; /* Matches sidebar width */
   margin-top: 0; /* no extra space at the top */
   margin-bottom: 15px; /* bigger space after second title */
       color: #A9A9A9; 
@@ -154,7 +154,7 @@ width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
 
 
 /margin-left: 0;
-  margin-right: 20%;
+  margin-right: 17%;
     /width: 100%;
     /padding: 20px;
     /text-align: center;
@@ -197,7 +197,7 @@ width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
 }
 
 .about-section {
-  margin-left: 14.5%; /* Push it more to the right (beyond the sidebar) */
+  margin-left: 15%; /* Push it more to the right (beyond the sidebar) */
   max-width: 1000px;
   width: 90%; /* Make it wider */
   text-align: center; /* Optional: left-align for readability */
@@ -355,6 +355,26 @@ width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
   max-width: 1200px;
 }
 
+
+.container {
+  display: flex;
+  flex-wrap: wrap;  /* Ensure content can wrap on smaller screens */
+
+}
+
+
+
+.experience-item {
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 200px; /* Shift the item to the right */
+  
+
+  background-color: #2c3e50;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 /
 
 /* Ensure Back Link doesn't overlap when screen is resized */
@@ -392,42 +412,28 @@ width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
   }
 
   #experience {
+width: 100%;
+  overflow: visible;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left; /* or center, if desired */
     margin-left: 0;
-    padding: 0 10px;
- margin-right: 100px; /* Shift the item to the right */
+    padding: 10 10px;
+
   }
 
   .experience-item {
-      flex-direction: column;
-  align-items: center;
-    max-width: 100%;
+    margin-left: 0 !important;
     width: 100%;
-    margin-bottom: 30px;
-padding: 20px;
-margin-left: 0;
- margin-right: 90px; /* Shift the item to the right */
+ max-width: 90%; /* or a specific pixel value like 320px *
+    padding: 20px;
+    background-color: #2c3e50;
+    border: 2px solid #3498db; /* Optional: makes the box edge more visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
 
   }
 
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;  /* Ensure content can wrap on smaller screens */
-}
-
-
-
-.experience-item {
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-left: 200px; /* Shift the item to the right */
-
-  background-color: #2c3e50;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
