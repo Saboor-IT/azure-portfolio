@@ -14,7 +14,12 @@ body {
 .experience-item ul li {
   margin-bottom: 10px; /* Adjust the value as needed */
 }
-
+.experience-entry .left h3 span {
+  display: inline; /* Default to inline for larger screens */
+}
+.experience-entry .left p {
+display: inline; /* Default to inline for larger screens */
+}
  .experience-entry {
       display: flex;
       justify-content: space-between;
@@ -414,11 +419,16 @@ width: 100%;
     height: auto; /* Allow it to grow with content */
     padding-left: 20px;
   }
-
+ .experience-entry .left p {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   .experience {
     width: 100%; /* Experience section takes full width on mobile */
     margin-left: 0; /* Remove any left margin */
-    padding: 10px; /* Reduce padding to fit better on smaller screens */
+    padding: 0px; /* Reduce padding to fit better on smaller screens */
   }
 
   /* Adjust the back link position */
@@ -592,6 +602,21 @@ width: 100%;
   /* Optional: Adjust font size for mobile */
   .section-box ul li a {
     font-size: 16px;
+  }
+
+
+.experience-entry .right {
+    margin-left: auto;
+
+    top: 0;
+    right: 0;
+    white-space: nowrap; /* Prevents wrapping of the dates */
+  }
+.experience-entry .left h3 {
+    display: block; /* Makes the whole header block-level */
+  }
+  .experience-entry .left h3 span {
+    display: block; /* Forces the bracketed text to be on the next line */
   }
 
 }
