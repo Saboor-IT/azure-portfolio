@@ -31,7 +31,7 @@
     
     <!-- Dropdown for Projects -->
  <li>
-  <details>
+  <details id="projectsDropdown">
     <summary class="project-title">Projects</summary>
     <ul style="padding-left: 20px; margin-top: 10px;">
       <li style="margin-bottom: 10px;"><a href="project1.html">Azure Network Security Implementation</a></li>
@@ -76,5 +76,22 @@
   <a href="project3.html" class="next-link">Next Project ➔</a>
 </div>
 	
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.getElementById("projectsDropdown");
+
+    // Restore open state
+    if (localStorage.getItem("projectsDropdownOpen") === "true") {
+      dropdown.setAttribute("open", "");
+    }
+
+    // Save state when toggled
+    dropdown.addEventListener("toggle", function () {
+      localStorage.setItem("projectsDropdownOpen", dropdown.open);
+    });
+  });
+</script>
+
 </body>
 </html>

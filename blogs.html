@@ -30,7 +30,7 @@
     <li><a href="blogs.html">Blogs</a></li>
     <!-- Dropdown for Projects -->
     <li>
-      <details>
+      <details id="projectsDropdown">
         <summary style="color: #fff; font-size: 18px; cursor: pointer;">Projects</summary>
         <ul style="padding-left: 20px; margin-top: 10px;">
           <li><a href="project1.html">Azure Network Security Implementation</a></li>
@@ -121,5 +121,22 @@
         </div>
 
     </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.getElementById("projectsDropdown");
+
+    // Restore open state
+    if (localStorage.getItem("projectsDropdownOpen") === "true") {
+      dropdown.setAttribute("open", "");
+    }
+
+    // Save state when toggled
+    dropdown.addEventListener("toggle", function () {
+      localStorage.setItem("projectsDropdownOpen", dropdown.open);
+    });
+  });
+</script>
+
 </body>
 </html>

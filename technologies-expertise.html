@@ -19,7 +19,7 @@
 </head>
 <body>
    <!-- Sidebar Menu -->
-<div class="sidebar">
+<div class="sidebar fixed">
   <h2>Site Menu</h2>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -28,21 +28,22 @@
     <li><a href="education-certifications.html">Education & Certifications</a></li>
     <li><a href="https://www.linkedin.com/in/saboor-ali/details/recommendations/?detailScreenTabIndex=0">Recommendations</a></li>
     <li><a href="blogs.html">Blogs</a></li>
+    
     <!-- Dropdown for Projects -->
-    <li>
-      <details>
-        <summary style="color: #fff; font-size: 18px; cursor: pointer;">Projects</summary>
-        <ul style="padding-left: 20px; margin-top: 10px;">
-          <li><a href="project1.html">Azure Network Security Implementation</a></li>
-          <li><a href="project2.html">RightFax DiD SIP Migration</a></li>
-          <li><a href="project3.html">RightFax Azure Migration</a></li>
-          <li><a href="project4.html">RPA Client Record Automation</a></li>
-          <li><a href="project5.html">DocuShare Server Patching</a></li>
-          <li><a href="project6.html">Linux Server Environment Setup</a></li>
-          <li><a href="project7.html">Python Log Parser</a></li>
-        </ul>
-      </details>
-    </li>
+ <li>
+  <details id="projectsDropdown">
+    <summary class="project-title">Projects</summary>
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li style="margin-bottom: 10px;"><a href="project1.html">Azure Network Security Implementation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project2.html">RightFax DiD SIP Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project3.html">RightFax Azure Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project4.html">RPA Client Record Automation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project5.html">DocuShare Server Patching</a></li>
+      <li style="margin-bottom: 10px;"><a href="project6.html">Linux Server Environment Setup</a></li>
+      <li><a href="project7.html">Python Log Parser</a></li>
+    </ul>
+  </details>
+</li>
     <li><a href="https://www.linkedin.com/in/saboor-ali/" target="_blank">Let's Connect</a></li>
   </ul>
 </div>
@@ -155,5 +156,22 @@
     </section>
  </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.getElementById("projectsDropdown");
+
+    // Restore open state
+    if (localStorage.getItem("projectsDropdownOpen") === "true") {
+      dropdown.setAttribute("open", "");
+    }
+
+    // Save state when toggled
+    dropdown.addEventListener("toggle", function () {
+      localStorage.setItem("projectsDropdownOpen", dropdown.open);
+    });
+  });
+</script>
+
 </body>
 </html>
