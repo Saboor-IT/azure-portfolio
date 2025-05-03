@@ -11,6 +11,8 @@ body {
   color: #e0e0e0; /* Light text */
 }
 
+
+
 .sidebar {
   position: fixed; /* Fixed on the left side */
   top: 0px;
@@ -58,6 +60,14 @@ body {
 
 }
 
+.section-box-cert {
+  padding: 20px;
+  background-color: #2c3e50;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ margin-bottom: 30px;
+}
+
 .two-column-layout {
   display: flex;
   justify-content: space-between;
@@ -85,6 +95,26 @@ section {
 }
 
 
+
+.section-box ul {
+    list-style-position: inside; /* Moves the bullet points inside the list item */
+
+}
+
+.section-box ul li {
+    max-width: 1000px; /* Adjust the width as needed */
+    word-wrap: break-word;
+    margin-bottom: 15px; /* Adds space between the items */
+    padding-right: 0px; /* Prevents text from being too close to the edge */
+    text-indent: -20px; /* Indent the first line to create a hanging indent effect */
+    padding-left: 20px; /* Adjust this padding to indent the rest of the text */
+  margin-left: 2%;
+
+}
+
+.section-box-cert ul li {
+    margin-bottom: 10px; /* Adds spacing between bullet points */
+}
     .blog-image {
         width: 100%;
         max-width: 600px;
@@ -119,30 +149,28 @@ section {
   font-size: 14px;
 }
 
-
 .cert-list {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-.cert-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 5px;
+
+
+.cert-dates {
+  text-align: right;
+  font-size: 14px;
+  color: #fff;
+font-weight: bold;
+  margin-left: auto;
 }
 
-.cert-date {
-  min-width: 50px;
-  text-align: left;
-  color: #ffff;
-  font-weight: normal;
-  padding-left: 1rem;
-}
-
-.cert-name {
-  flex: 1;
+.cert-description {
+  margin-top: 0px;
+  width: 73%;
+  font-size: 15px;
+  color: #ddd;
+padding-bottom: 10px;
 }
 
 /* Sidebar styles */
@@ -160,27 +188,7 @@ h1, h2 {
   color: #D3D3D3; 
 }
 
-.title1 {
-  margin-top: 10px;
 
-width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
- margin-left: 14.5%; /* Matches sidebar width */
-  margin-bottom: 10px;
-      color: #D3D3D3; 
-flex: 1;
-margin-left: 190px;
-}
-
-.title2 {
-
-width: calc(100% - 12%); /* Sidebar is 15%, so main content uses the rest */
- margin-left: 14.5%; /* Matches sidebar width */
-  margin-top: 0; /* no extra space at the top */
-  margin-bottom: 15px; /* bigger space after second title */
-      color: #A9A9A9; 
-flex: 1;
-margin-left: 190px;
-}
 
 /* Main content styles */
 .main-content {
@@ -197,39 +205,6 @@ margin-left: 190px;
 }
 
 
-.about-section {
-  margin-left: 15%; /* Push it more to the right (beyond the sidebar) */
-  max-width: 800px;
-  width: 90%; /* Make it wider */
-margin-left: 200px;
-  text-align: center; /* Optional: left-align for readability */
-  padding: 30px;
-  color: #fff;
-  margin-top: 00px;
-  margin-bottom: 00px;
-flex: 1;
-}
-
-
-.about-section h2 {
-
-width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
- margin-left: 0%; /* Matches sidebar width */
-  margin-top: 0px;
-  margin-bottom: 12px;
- 
-}
-
-.about-section p {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  font-size: 1.2em;
-  color: #FFFFFF;
-  line-height: 1.6;
-  max-width: 100%;
-  margin: 0 0 15px 0;
-  text-align: center; /* or center, depending on your preference */
-}
 
 
 /* Skills Section and Project Section */
@@ -293,6 +268,7 @@ width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
 .project-content h1,
 .project-content h2 {
   margin-bottom: 0.5em;
+margin-top: 0px;
 }
 
 .project-content .back-link {
@@ -300,7 +276,6 @@ width: calc(100% - 0%); /* Sidebar is 15%, so main content uses the rest */
   color: #007BFF;
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 20px;
   display: inline-block;
 }
 
@@ -538,6 +513,49 @@ width: 100%;
   .dropdown-container a {
     font-size: 16px;
     color: #fff;
+  }
+  .cert-title {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 1.5em; /* Space for date at bottom */
+  }
+
+  .cert-title {
+    flex-direction: column;
+  }
+
+  .cert-dates {
+    align-self: flex-end;
+    margin-top: 4px;
+  }
+  .section-box {
+    width: 90%; /* Adjust the width to fit well on mobile */
+    margin: 0 auto; /* Center the box */
+    padding: 20px;
+  }
+
+  /* Center the list items */
+  .section-box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list items horizontally */
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .section-box ul li {
+    text-align: center; /* Center the text inside list items */
+    margin-bottom: 15px; /* Add space between items */
+    padding: 5px 10px;
+    width: 100%; /* Ensure list items take up the full width */
+    box-sizing: border-box;
+  }
+
+  /* Optional: Adjust font size for mobile */
+  .section-box ul li a {
+    font-size: 16px;
   }
 
 }
