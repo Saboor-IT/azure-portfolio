@@ -13,11 +13,12 @@ body {
 
 
 .sidebar-image {
-  position: absolute;
-  bottom: 0;
-  width: 100%; /* Adjust size */
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin-top: 20px;
 }
+
 
 .experience-item ul li {
   margin-bottom: 10px; /* Adjust the value as needed */
