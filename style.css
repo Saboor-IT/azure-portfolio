@@ -15,6 +15,36 @@ body {
   margin-bottom: 10px; /* Adjust the value as needed */
 }
 
+ .experience-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #ccc;
+      padding: 16px 0;
+    }
+
+    .experience-entry .left h2 {
+  padding-top: 0;
+  margin-top: 0;
+      margin: 0 0 4px;
+    }
+
+    .experience-entry .left p {
+ padding-top: 0;
+  margin-top: 0;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .experience-entry .right p {
+      margin: 0;
+      font-style: italic;
+      color: #fff;
+padding-top: 20px;
+    }
+
+
+
 .sidebar {
   position: fixed; /* Fixed on the left side */
   top: 0px;
@@ -327,7 +357,8 @@ margin-top: 0px;
 
 
 .experience {
-  padding: 20px;
+   padding-top: 0;
+  margin-top: 0;
    display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -347,6 +378,8 @@ margin-top: 0px;
 
 
 .experience-item {
+ padding-top: 0;
+  margin-top: 0;
   padding: 10px;
 width: 100%;
   margin-bottom: 20px;
