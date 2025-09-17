@@ -12,6 +12,7 @@ body {
 }
 
 
+
 .sidebar-image {
   display: block;
   max-width: 100%;
@@ -279,6 +280,10 @@ h1, h2 {
   padding: 0;
 }
 
+.project-section ul li {
+  margin-bottom: 6px;
+}
+
 .project-section ul li a {
   text-decoration: none;
   color: #dcdcdc;  /* Sky Blue for sidebar links */
@@ -301,6 +306,15 @@ h1, h2 {
     height: auto;
   }
 }
+.content {
+  padding: 20px;
+  margin-left: 18%; /* This ensures the content starts after the sidebar */
+  width: 82%; /* The content takes up the remaining space */
+  box-sizing: border-box;
+  max-width: 1500px;
+}
+
+
 
 /* Project Content Styles */
 .project-content {
@@ -405,8 +419,11 @@ width: 100%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/
 
+ .no-bullet {
+      list-style-type: none; /* Removes bullet for this specific list item */
+     
+    }
 /* Ensure Back Link doesn't overlap when screen is resized */
 .back-link {
   position: relative;

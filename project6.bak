@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QG5K8LDWGB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QG5K8LDWGB');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux DNS, DHCP, Mail, and Client Servers Setup Using VMware - Saboor's Resume</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Sidebar Menu -->
+<div class="sidebar fixed">
+  <h2>Site Menu</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="professional-experience.html">Professional Experience</a></li>
+    <li><a href="technologies-expertise.html">Technologies & Expertise</a></li>
+    <li><a href="education-certifications.html">Education & Certifications</a></li>
+    <li><a href="https://www.linkedin.com/in/saboor-ali/details/recommendations/?detailScreenTabIndex=0">Recommendations</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+
+<li>
+  <details id="penTestingDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Kali Linux Penetration Testing
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li><a href="pen-testing-overview.html">Overview</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 1)_Lab Setup, Reconnaissance, and Enumeration.pdf" target="_blank">Part 1: Lab Setup, Reconnaissance, and Enumeration</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 2)_ Exploitation and Privilege Escalation.pdf" target="_blank">Part 2: Exploitation and Privilege Escalation</a></li>
+    </ul>
+  </details>
+</li>
+
+<details id="projectsDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Projects</summary>
+    
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li style="margin-bottom: 10px;"><a href="project1.html">Azure Network Security Implementation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project2.html">RightFax DiD SIP Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project3.html">RightFax Azure Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project4.html">RPA Client Record Automation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project5.html">DocuShare Server Patching</a></li>
+      <li style="margin-bottom: 10px;"><a href="project6.html">Linux Server Environment Setup</a></li>
+      <li><a href="project7.html">Python Log Parser</a></li>
+    </ul>
+  </details>
+</li>
+    <li><a href="https://www.linkedin.com/in/saboor-ali/" target="_blank">Let's Connect</a></li>
+  </ul>
+</div>
+
+<!-- Project Content Section -->
+<main class="project-content">
+    <a href="project5.html" class="back-link">Previous Project</a>
+
+    <h1>Linux DNS, DHCP, Mail, and Client Servers Setup Using VMware</h1>
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="images/project6diagram.png" alt="Azure Network Security Implementation" style="max-width: 500px; width: 100%; height: auto;">
+</div>
+
+    <p><strong>Duration:</strong> Jul 2019 - Aug 2019</p>
+    <p><strong>Project Overview:</strong> Installed and configured a range of Linux-based services including DNS, DHCP, and email servers, as well as client server setups within a VMware environment for a small business looking to improve internal communications and network management.</p>
+
+    <h2>Key Achievements:</h2>
+    <ul>
+        <li>Successfully set up DNS, DHCP, and mail servers in a secure Linux environment.</li>
+        <li>Optimized server performance and minimized downtime during installations.</li>
+    </ul>
+
+    <h2>Skills:</h2>
+    <p>Linux Server Administration · VMware · DNS · DHCP · Mail Server Setup · IT Infrastructure Setup</p>
+	
+<div style="text-align: center;">
+  <a href="project7.html" class="next-link">Next Project ➔</a>
+</div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = [
+    { id: "projectsDropdown", key: "projectsDropdownOpen" },
+    { id: "penTestingDropdown", key: "penTestingDropdownOpen" }
+  ];
+
+  dropdowns.forEach(dropdown => {
+    const element = document.getElementById(dropdown.id);
+    if (!element) return;
+
+    // Restore open state from localStorage
+    if (localStorage.getItem(dropdown.key) === "true") {
+      element.setAttribute("open", "");
+    }
+
+    // Save state when toggled
+    element.addEventListener("toggle", () => {
+      localStorage.setItem(dropdown.key, element.open);
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>

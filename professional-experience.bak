@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QG5K8LDWGB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QG5K8LDWGB');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Experience - Saboor's Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Dropdown specific styles */
+    .dropdown-btn {
+      font-size: 18px;
+      border: none;
+      background: none;
+      color: #fff;
+      padding: 8px 0;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .dropdown-container {
+      display: none;
+      background-color: #444;
+      padding-left: 15px;
+    }
+
+    .dropdown-container a {
+      font-size: 16px;
+    }
+
+    .dropdown-btn:hover {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar fixed">
+  <h2>Site Menu</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="professional-experience.html">Professional Experience</a></li>
+    <li><a href="technologies-expertise.html">Technologies & Expertise</a></li>
+    <li><a href="education-certifications.html">Education & Certifications</a></li>
+    <li><a href="https://www.linkedin.com/in/saboor-ali/details/recommendations/?detailScreenTabIndex=0">Recommendations</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+
+<li>
+  <details id="penTestingDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Kali Linux Penetration Testing
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li><a href="pen-testing-overview.html">Overview</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 1)_Lab Setup, Reconnaissance, and Enumeration.pdf" target="_blank">Part 1: Lab Setup, Reconnaissance, and Enumeration</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 2)_ Exploitation and Privilege Escalation.pdf" target="_blank">Part 2: Exploitation and Privilege Escalation</a></li>
+    </ul>
+  </details>
+</li>
+
+<details id="projectsDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Projects</summary>
+    
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li style="margin-bottom: 10px;"><a href="project1.html">Azure Network Security Implementation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project2.html">RightFax DiD SIP Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project3.html">RightFax Azure Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project4.html">RPA Client Record Automation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project5.html">DocuShare Server Patching</a></li>
+      <li style="margin-bottom: 10px;"><a href="project6.html">Linux Server Environment Setup</a></li>
+      <li><a href="project7.html">Python Log Parser</a></li>
+    </ul>
+  </details>
+</li>
+
+    <li><a href="https://www.linkedin.com/in/saboor-ali/" target="_blank">Let's Connect</a></li>
+
+  </ul>
+</div>
+
+  <!-- Main Content -->
+<div class="project-content">
+<a href="index.html" class="back-link">Back to Home</a>
+</div>
+  <div class="experience">
+        <h1>Professional Experience</h1>
+</div>
+<div class="container">
+
+    <section id="experience">
+      <div class="experience-item">
+       <div class="experience-entry">
+    <div class="left">
+      <h3>System Engineer (Infrastructure)</h3>
+      <p><strong>Process Fusion Inc.</strong>, Etobicoke, ON</p>
+    </div>
+    <div class="right">
+      <p>Apr 2023 – Oct 2024</p>
+    </div>
+  </div>
+        <ul>
+          <li>Managed Azure environments with a focus on secure access, uptime, issue resolution, and threat mitigation.</li>
+          <li>Automated & monitored threat detection via Microsoft Defender for Cloud, proactively remediating vulnerabilities.</li>
+          <li>Utilized Entra ID for identity governance and role-based access control (RBAC), strengthening authentication policies.</li>
+          <li>Resolved internal user issues related to access, performance, and connectivity across cloud and on-prem environments.</li>
+          <li>Performed infrastructure tasks such as whitelisting IPs, testing network connectivity, and validating system accessibility.</li>
+          <li>Increased Azure Security Score by 20% while improving system performance and ensuring SOC 2 compliance.</li>
+          <li>Installed, configured, and maintained RightFax servers, ensuring seamless integration with email servers, MFPs, and APIs.</li>
+          <li>Administered RightFax systems, troubleshooting fax transmissions, SIP-based VoIP faxing, and PBX integrations.</li>
+          <li>Managed dialing rules, security settings, and user permissions for secure and efficient document delivery.</li>
+          <li>Optimized RightFax infrastructure for performance and reliability, maintaining 99% uptime and minimizing latency.</li>
+          <li>Developed and maintained comprehensive documentation for RightFax architecture, configurations, and best practices.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-entry">
+    <div class="left">
+      <h3>System Engineer (Professional Services)</h3>
+      <p><strong>Process Fusion Inc.</strong>, Etobicoke, ON</p>
+    </div>
+    <div class="right">
+      <p>Jan 2022 – Apr 2023</p>
+    </div>
+  </div>
+
+        <ul>
+          <li>Designed network architecture for deployments of RightFax; assessed legacy setups and documented configurations.</li>
+          <li>Installed, configured, and migrated 25+ RightFax servers, leading UAT to ensure 100% readiness and compliance.</li>
+          <li>Conducted system upgrades and applied patches to ensure security and optimized performance.</li>
+          <li>Designed and implemented disaster recovery plans for RightFax, ensuring seamless business continuity.</li>
+          <li>Managed user provisioning in line with IGA and ILM policies.</li>
+          <li>Collaborated with Telcos to migrate 2500+ fax numbers from PBX to SIP, enhancing scalability.</li>
+          <li>Conducted Azure Cloud migration for on-prem RightFax, improving availability and scalability.</li>
+          <li>Aligned deployments with broader enterprise IT strategies through cross-functional collaboration.</li>
+          <li>Developed and demoed RPA solutions with Primo RPA, cutting task time by 70%.</li>
+          <li>Provided post-migration support, achieving a 95% user satisfaction rate.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        
+<div class="experience-entry">
+    <div class="left">
+      <h3>System Engineer <span>(Technical Support)</span></h3>
+      <p><strong>Process Fusion Inc.</strong>, Etobicoke, ON</p>
+    </div>
+    <div class="right">
+      <p>Feb 2019 – Jan 2022</p>
+    </div>
+  </div>
+        <ul>
+          <li>Provided IT support for 500+ users, reducing downtime by 30% through efficient troubleshooting.</li>
+          <li>Administered 500+ user accounts in Active Directory and RightFax, ensuring proper permissions and security policies.</li>
+          <li>Provided tier-2 and tier-3 support for RightFax, DocuShare, and ABBYY, resolving 1,500+ tickets.</li>
+          <li>Diagnosed networking issues impacting fax delivery, including SIP, T.38, and firewall configurations.</li>
+          <li>Monitored IT services and infrastructure, maintaining 99% service availability and reducing outages by 25%.</li>
+          <li>Achieved 95% SLA compliance, improving overall user satisfaction.</li>
+          <li>Coordinated with vendors and internal teams to resolve critical system issues, including outages.</li>
+          <li>Implemented disaster recovery plans and conducted failover testing to maintain 99% uptime.</li>
+          <li>Delivered technical training and documentation, improving user productivity by 20%.</li>
+          <li>Collaborated with cross-functional teams to implement IT solutions, achieving 95% customer satisfaction.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item"> <div class="experience-entry">
+    <div class="left">
+      <h3>Lab Facilitator</h3>
+      <p><strong>George Brown College</strong>, Toronto, ON</p>
+    </div>
+    <div class="right">
+      <p>Jan 2018 – Apr 2018</p>
+    </div>
+  </div>
+        <ul>
+          <li>Administered and managed Blackboard LMS for over 300 students, ensuring smooth access and system functionality.</li>
+          <li>Provided technical support to students and faculty, improving user experience by reducing resolution times by 25%.</li>
+          <li>Conducted and monitored student examinations, ensuring integrity and smooth execution.</li>
+          <li>Maintained lab environments and monitored system performance, achieving 99% uptime.</li>
+          <li>Collaborated with faculty to integrate course materials into the LMS efficiently.</li>
+          <li>Managed student accounts, resolving access issues and ensuring proper permissions within the LMS.</li>
+        </ul>
+      </div>
+   </section>
+
+  </div>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = [
+    { id: "projectsDropdown", key: "projectsDropdownOpen" },
+    { id: "penTestingDropdown", key: "penTestingDropdownOpen" }
+  ];
+
+  dropdowns.forEach(dropdown => {
+    const element = document.getElementById(dropdown.id);
+    if (!element) return;
+
+    // Restore open state from localStorage
+    if (localStorage.getItem(dropdown.key) === "true") {
+      element.setAttribute("open", "");
+    }
+
+    // Save state when toggled
+    element.addEventListener("toggle", () => {
+      localStorage.setItem(dropdown.key, element.open);
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>

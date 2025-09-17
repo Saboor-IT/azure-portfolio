@@ -28,11 +28,22 @@
     <li><a href="education-certifications.html">Education & Certifications</a></li>
     <li><a href="https://www.linkedin.com/in/saboor-ali/details/recommendations/?detailScreenTabIndex=0">Recommendations</a></li>
     <li><a href="blogs.html">Blogs</a></li>
+
+<li>
+  <details id="penTestingDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Kali Linux Penetration Testing
+    </summary>
+<ul style="padding-left: 20px; margin-top: 10px;">
+      <li><a href="pen-testing-overview.html">Overview</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 1)_Lab Setup, Reconnaissance, and Enumeration.pdf" target="_blank">Part 1: Lab Setup, Reconnaissance, and Enumeration</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 2)_ Exploitation and Privilege Escalation.pdf" target="_blank">Part 2: Exploitation and Privilege Escalation</a></li>
+    </ul>
+  </details>
+</li>
+
+<details id="projectsDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Projects</summary>
     
-    <!-- Dropdown for Projects -->
- <li>
-  <details id="projectsDropdown">
-    <summary class="project-title">Projects</summary>
     <ul style="padding-left: 20px; margin-top: 10px;">
       <li style="margin-bottom: 10px;"><a href="project1.html">Azure Network Security Implementation</a></li>
       <li style="margin-bottom: 10px;"><a href="project2.html">RightFax DiD SIP Migration</a></li>
@@ -77,21 +88,31 @@
 </div>
 	
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const dropdown = document.getElementById("projectsDropdown");
 
-    // Restore open state
-    if (localStorage.getItem("projectsDropdownOpen") === "true") {
-      dropdown.setAttribute("open", "");
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = [
+    { id: "projectsDropdown", key: "projectsDropdownOpen" },
+    { id: "penTestingDropdown", key: "penTestingDropdownOpen" }
+  ];
+
+  dropdowns.forEach(dropdown => {
+    const element = document.getElementById(dropdown.id);
+    if (!element) return;
+
+    // Restore open state from localStorage
+    if (localStorage.getItem(dropdown.key) === "true") {
+      element.setAttribute("open", "");
     }
 
     // Save state when toggled
-    dropdown.addEventListener("toggle", function () {
-      localStorage.setItem("projectsDropdownOpen", dropdown.open);
+    element.addEventListener("toggle", () => {
+      localStorage.setItem(dropdown.key, element.open);
     });
   });
+});
 </script>
+
 
 </body>
 </html>

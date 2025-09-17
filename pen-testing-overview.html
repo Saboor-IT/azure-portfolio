@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kali Linux Penetration Testing Overview - Saboor's Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar Menu -->
+  <div class="sidebar">
+    <h2>Site Menu</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="professional-experience.html">Professional Experience</a></li>
+      <li><a href="technologies-expertise.html">Technologies & Expertise</a></li>
+      <li><a href="education-certifications.html">Education & Certifications</a></li>
+      <li><a href="https://www.linkedin.com/in/saboor-ali/details/recommendations/?detailScreenTabIndex=0">Recommendations</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+
+<li>
+  <details id="penTestingDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Kali Linux Penetration Testing</summary>
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li><a href="pen-testing-overview.html">Overview</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 1)_Lab Setup, Reconnaissance, and Enumeration.pdf" target="_blank">Part 1: Lab Setup, Reconnaissance, and Enumeration</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 2)_ Exploitation and Privilege Escalation.pdf" target="_blank">Part 2: Exploitation and Privilege Escalation</a></li>
+    </ul>
+  </details>
+</li>
+
+<details id="projectsDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Projects</summary>
+          
+          <ul style="padding-left: 20px; margin-top: 10px;">
+            <li><a href="project1.html">Azure Network Security Implementation</a></li>
+            <li><a href="project2.html">RightFax DiD SIP Migration</a></li>
+            <li><a href="project3.html">RightFax Azure Migration</a></li>
+            <li><a href="project4.html">RPA Client Record Automation</a></li>
+            <li><a href="project5.html">DocuShare Server Patching</a></li>
+            <li><a href="project6.html">Linux Server Environment Setup</a></li>
+            <li><a href="project7.html">Python Log Parser</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="https://www.linkedin.com/in/saboor-ali/" target="_blank">Let's Connect</a></li>
+    </ul>
+  </div>
+
+  <!-- Kali Linux Penetration Testing Overview Content -->
+<div class="content" style="text-align: center;">
+<img src="images/Kali.png" alt="Kali Linux" style="width: 100%; height: auto; object-fit: cover;">
+
+  <h1>Kali Linux Penetration Testing Overview</h1>
+  <p>The Penetration Testing (Kali Linux Penetration Testing) methodology involves simulating attacks on systems and networks to identify vulnerabilities before malicious hackers can exploit them. The process generally consists of various phases, each of which helps organizations identify weak points in their security infrastructure.</p>
+
+  <h2>Phase 1: Lab Setup & Fundamentals</h2>
+  <p>In this initial phase, the testing environment is established. This typically involves setting up virtual machines (VMs) that simulate both the target and attacker environments. Commonly used VMs include Kali Linux for the attacker machine, which comes pre-configured with a wide array of security tools such as Metasploit, Nmap, Burp Suite, and Wireshark. For the target systems, VMs like Windows Server, Linux (e.g., Ubuntu or CentOS), and intentionally vulnerable machines such as those from the Metasploitable series are used. These VMs are configured to simulate a realistic network environment, allowing testers to perform reconnaissance, vulnerability scanning, exploitation, and post-exploitation activities safely. Additionally, security tools and scripts are also installed to help streamline the testing process and enhance effectiveness.</p>
+
+  <h2>Phase 2: Network Scanning & Enumeration</h2>
+  <p>During this phase, various network scanning techniques, including vulnerability scanners, are employed to map the target's network and enumerate open ports, services, and other information that could reveal vulnerabilities. Tools such as Nmap or Nessus are typically used to perform thorough reconnaissance of the network. Scanning helps identify weaknesses such as outdated software versions, improperly configured services, and open ports that could potentially be exploited. Enumeration also involves identifying users, shares, and other network resources that can be targeted for further exploitation.</p>
+
+  <h2>Phase 3: Exploitation</h2>
+  <p>Exploitation involves leveraging identified vulnerabilities to gain unauthorized access to systems, networks, or data. This phase aims to demonstrate the extent to which these vulnerabilities can be exploited by malicious actors. Techniques such as SQL injection, buffer overflow attacks, and privilege escalation are commonly used. The goal of exploitation is not only to confirm the vulnerability but also to test the impact of a potential attack, such as the ability to execute arbitrary code or exfiltrate sensitive information. It is important to perform exploitation in a controlled manner to prevent damage to the target system.</p>
+
+<h2>Phase 4: Access Persistence & Escalation</h2>
+<p>In this phase, the focus shifts to maintaining access to the compromised system and escalating privileges. Persistence mechanisms, such as installing backdoors or creating new user accounts, are put in place to ensure continued access. Privilege escalation techniques are also used to gain higher-level privileges, such as administrative or root access, allowing deeper penetration into the system. This phase simulates what an attacker might do to extend control over the environment and assess the depth of a potential breach.</p>
+
+<h2>Phase 5: Reporting</h2>
+<p>Once the testing is complete, all findings from previous phases are documented in a comprehensive report. This includes a summary of the vulnerabilities found, attack methods used, the impact of the exploitation, and the actions taken during the test. The report provides recommendations for remediation, helping stakeholders prioritize security improvements and reduce the risk of future attacks. It serves as the basis for the organization to enhance its overall security posture.</p>
+
+<p>PDF documentation for all phases:</p>
+    <li class="no-bullet">
+  <a href="docs/Penetration Testing Project (Part 1)_Lab Setup, Reconnaissance, and Enumeration.pdf" target="_blank"  
+     style="font-weight: bold; color: #0077cc; font-size: 18px;"> Download Part 1: Lab Setup, Reconnaissance, and Enumeration
+  </a>
+</li>
+<li class="no-bullet">
+<a href="docs\Penetration Testing Project (Part 2)_ Exploitation and Privilege Escalation.pdf" target="_blank"  
+     style="font-weight: bold; color: #0077cc; font-size: 18px;"> Download Part 2: Exploitation and Privilege Escalation
+  </a>
+</li>
+</div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const penTestingDropdown = document.getElementById("penTestingDropdown");
+      const projectsDropdown = document.getElementById("projectsDropdown");
+
+      // Restore open state for Kali Linux Penetration Testing dropdown
+      if (localStorage.getItem("penTestingDropdownOpen") === "true") {
+        penTestingDropdown.setAttribute("open", "");
+      }
+
+      // Restore open state for Projects dropdown
+      if (localStorage.getItem("projectsDropdownOpen") === "true") {
+        projectsDropdown.setAttribute("open", "");
+      }
+
+      // Save state when toggled for Kali Linux Penetration Testing dropdown
+      penTestingDropdown.addEventListener("toggle", function () {
+        localStorage.setItem("penTestingDropdownOpen", penTestingDropdown.open);
+      });
+
+      // Save state when toggled for Projects dropdown
+      projectsDropdown.addEventListener("toggle", function () {
+        localStorage.setItem("projectsDropdownOpen", projectsDropdown.open);
+      });
+    });
+  </script>
+</body>
+</html>

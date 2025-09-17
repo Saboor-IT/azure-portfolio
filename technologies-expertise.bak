@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QG5K8LDWGB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QG5K8LDWGB');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies & Expertise - Saboor's Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Sidebar Menu -->
+<div class="sidebar fixed">
+  <h2>Site Menu</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="professional-experience.html">Professional Experience</a></li>
+    <li><a href="technologies-expertise.html">Technologies & Expertise</a></li>
+    <li><a href="education-certifications.html">Education & Certifications</a></li>
+    <li><a href="https://www.linkedin.com/in/saboor-ali/details/recommendations/?detailScreenTabIndex=0">Recommendations</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+
+<li>
+  <details id="penTestingDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Kali Linux Penetration Testing
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li><a href="pen-testing-overview.html">Overview</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 1)_Lab Setup, Reconnaissance, and Enumeration.pdf" target="_blank">Part 1: Lab Setup, Reconnaissance, and Enumeration</a></li>
+      <li><a href="docs\Penetration Testing Project (Part 2)_ Exploitation and Privilege Escalation.pdf" target="_blank">Part 2: Exploitation and Privilege Escalation</a></li>
+    </ul>
+  </details>
+</li>
+
+<details id="projectsDropdown">
+    <summary style="color: #fff; font-size: 18px; cursor: pointer;">Projects</summary>
+    
+    <ul style="padding-left: 20px; margin-top: 10px;">
+      <li style="margin-bottom: 10px;"><a href="project1.html">Azure Network Security Implementation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project2.html">RightFax DiD SIP Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project3.html">RightFax Azure Migration</a></li>
+      <li style="margin-bottom: 10px;"><a href="project4.html">RPA Client Record Automation</a></li>
+      <li style="margin-bottom: 10px;"><a href="project5.html">DocuShare Server Patching</a></li>
+      <li style="margin-bottom: 10px;"><a href="project6.html">Linux Server Environment Setup</a></li>
+      <li><a href="project7.html">Python Log Parser</a></li>
+    </ul>
+  </details>
+</li>
+    <li><a href="https://www.linkedin.com/in/saboor-ali/" target="_blank">Let's Connect</a></li>
+  </ul>
+</div>
+
+    <!-- Main Content -->
+   <div class="project-content">
+    <a href="index.html" class="back-link">Back to Home</a>
+<br><br><br>
+    <h1>Technologies & Expertise</h1>
+
+  <div class="two-column-layout">
+        <section>
+            <h2 style="text-align: left;">💻 Core IT Expertise</h2>
+            <div class="skill-column">
+                <div class="skill-item">Infrastructure Operations & System Administration</div>
+                <div class="skill-item">Cloud Services Management (Azure)</div>
+                <div class="skill-item">Technical Support (Tier 2 & 3) & Troubleshooting</div>
+                <div class="skill-item">Professional Services & Post-Migration Support</div>
+                <div class="skill-item">Robotic Process Automation (RPA) for Business Processes</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align: left;">☁️ Cloud & Virtualization</h2>
+            <div class="skill-column">
+                <div class="skill-item">Microsoft Azure (VMs, VNETs, NSGs, Firewalls, Load Balancers)</div>
+                <div class="skill-item">Azure Identity & Governance (Entra ID, RBAC, Conditional Access)</div>
+		<div class="skill-item">Microsoft Defender for Cloud Security and Threat Protection</div>
+                <div class="skill-item">VMware</div>
+                <div class="skill-item">Cloud Migration: RightFax to Azure Infrastructure</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Another Wrapper to hold 2 sections side by side -->
+    <div class="two-column-layout">
+        <section>
+            <h2 style="text-align: left;">🔐 Security & Access Management</h2>
+            <div class="skill-column">
+                <div class="skill-item">Active Directory, Microsoft Entra ID</div>
+                <div class="skill-item">Multi-Factor Authentication, Conditional Access Policies</div>
+                <div class="skill-item">Threat Detection & Remediation (Microsoft Defender for Cloud)</div>
+                <div class="skill-item">Security Patching (vulnerabilities & bug fixes)</div>
+		<div class="skill-item">Compliance: HIPAA, PCI-DSS, and Patient Data Protection</div>
+                <div class="skill-item">SOC 2 Compliance Support & Security Hardening</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align: left;">📑 ITIL & IT Service Management</h2>
+            <div class="skill-column">
+                <div class="skill-item">ITIL Framework</div>
+                <div class="skill-item">Incident Management</div>
+                <div class="skill-item">Change Management</div>
+                <div class="skill-item">Service Level Management (SLAs, OLA)</div>
+                <div class="skill-item">ITSM / Ticket Escalation Processes (Support Levels, SLAs)</div>
+                <div class="skill-item">Knowledge Management (Internal Wikis, Help Centers)</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Wrapper for remaining sections -->
+    <div class="two-column-layout">
+        <section>
+            <h2 style="text-align: left;">🛠️ Tools & Platforms</h2>
+            <div class="skill-column">
+                <div class="skill-item">RightFax SME (Install, Upgrade & Migrate, SIP Configuration, Fax Routing)</div>
+        	<div class="skill-item">DocuShare, ABBYY, Primo RPA</div>
+        	<div class="skill-item">ServiceNow, Zendesk, NetSuite</div>
+        	<div class="skill-item">Postman, Visual Studio Code, GitHub, Notepad++</div>
+        	<div class="skill-item">Event Viewer, SSMS (SQL Server), Wireshark</div>
+        	<div class="skill-item">AD Integration, Migration & Sync Tools</div>
+            </div>
+        </section>  
+        <section>
+         <h2 style="text-align: left;">💬 Communication & Collaboration</h2>
+         <div class="skill-column">
+            <div class="skill-item">Client Demos & Stakeholder Training (RightFax, RPA)</div>
+            <div class="skill-item">Technical Documentation & Knowledge Base Creation</div>
+            <div class="skill-item">Remote Support via Microsoft Teams & Zoom</div>
+  	    <div class="skill-item">Cross-functional Team Collaboration (Project Management, IT Support)</div>
+            <div class="skill-item">Customer Relationship Management (CRM) Systems</div>
+            <div class="skill-item">Clear, Concise Technical & Non-Technical Communication (Presentations, Reports, Email)</div>
+        </div>
+       </section>
+    </div>
+
+   <div class="two-column-layout"> 
+	<section>
+            <h2 style="text-align: left;">📊 Monitoring, Reporting & Automation</h2>
+            <div class="skill-column">
+                <div class="skill-item">Azure Security Score Monitoring & Optimization</div>
+                <div class="skill-item">RightFax Usage Analytics, Reporting & Alerting</div>
+                <div class="skill-item">Workflow Automation with Primo RPA </div>
+                <div class="skill-item">Monitoring & Alerting Tools (Microsoft Defender for Cloud)</div>
+                <div class="skill-item">Backup & Disaster Recovery (e.g., Azure Backup)</div>
+		<div class="skill-item">Service Health Checks & Functionality Testing (Morning, Evening, Night)</div>
+            </div>
+        </section>        
+    <section>
+        <h2 style="text-align: left;">🧠 Additional Technical Skills</h2>
+        <div class="skill-column">
+	    <div class="skill-item">Application Logs Review & Error Diagnosis (Application logs, System Logs, Event Viewer)</div>
+            <div class="skill-item">Network Troubleshooting Tools (Wireshark, Ping, Traceroute)</div>
+            <div class="skill-item">Python (Regex for Log Parsing & Automation)</div>
+            <div class="skill-item">HTML, CSS – Web Presentation Layer Fundamentals</div>
+            <div class="skill-item">SQL – Basic Query Writing & Debugging Access Issues</div>
+            <div class="skill-item">Linux CLI & Server Configuration Fundamentals</div>
+        </div>
+    </section>
+ </div>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = [
+    { id: "projectsDropdown", key: "projectsDropdownOpen" },
+    { id: "penTestingDropdown", key: "penTestingDropdownOpen" }
+  ];
+
+  dropdowns.forEach(dropdown => {
+    const element = document.getElementById(dropdown.id);
+    if (!element) return;
+
+    // Restore open state from localStorage
+    if (localStorage.getItem(dropdown.key) === "true") {
+      element.setAttribute("open", "");
+    }
+
+    // Save state when toggled
+    element.addEventListener("toggle", () => {
+      localStorage.setItem(dropdown.key, element.open);
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>
