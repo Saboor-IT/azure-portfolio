@@ -39,7 +39,7 @@ Here are a few of the key projects I've worked on:
 
 Feel free to reach out to me via:
 
-- Email: saboor@portfolio.com
-- LinkedIn: [Saboor's LinkedIn](https://www.linkedin.com/in/saboor)
+- Email: alisaboor4@gmail.com
+- LinkedIn: [Saboor's LinkedIn](https://www.linkedin.com/in/saboor-ali)
 
 Thank you for visiting my portfolio!
